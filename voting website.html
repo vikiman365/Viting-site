@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Voting Website</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        object-fit: contain;
+    }
+
+    .content {
+        text-align: center;
+        margin-top: 20px;
+        position: relative;
+    }
+
+    .vote-btn {position: relative;
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        
+        padding: 20px 30px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 7px;
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+        margin-right: 70px;
+        overflow: hidden;
+    }
+    
+  
+   
+ 
+
+ 
+    .vote-message {
+        margin-top: 20px;
+        background-color: #3498db;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        display: none;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Card 1 -->
+    <div class="card">
+        <img src="./Sauti-Sol.jpg" alt="Placeholder Image">
+        <div class="content">
+            <h2>SAUTI  SOL</h2>
+            <p>Multifaceted creative sensation excelling in music, content creation, and acting</p>
+            <button class="vote-btn" onclick="castVote('voteMessage1')"><span></span>
+                <span></span>
+            </span><span>
+                <span></span>Vote</button>
+            <div class="vote-message" id="voteMessage1">Vote cast successfully!</div>
+        </div>
+    </div>
+
+    <!-- Repeat this card structure 14 more times -->
+    <!-- Card 2 -->
+    <div class="card">
+        <img src="./images (39).jpeg" alt="Placeholder Image">
+        <div class="content">
+            <h2>KING KAKA</h2>
+            <P>Trailblazing influencer captivating audiences with music, content creation, and stellar performances</P>
+            <button class="vote-btn" onclick="castVote('voteMessage2')">Vote</button>
+            <div class="vote-message" id="voteMessage2">Vote cast successfully!</div>
+        </div>
+    </div>
+    <div class="card">
+        <img src="./images (28).jpeg" alt="Placeholder Image">
+        <div class="content">
+            <h2>FOI WAMBUI</h2>
+            <P>Boundary-breaking talent redefining expectations across music, content creation, and acting</P>
+            <button class="vote-btn" onclick="castVote('voteMessage3')">Vote</button>
+            <div class="vote-message" id="voteMessage3">Vote cast successfully!</div>
+        </div>
+    </div>
+    <div class="card">
+        <img src="./images (29).jpeg" alt="Placeholder Image">
+        <div class="content">
+            <h2>THEE PLUTO</h2>
+            <P>Engagement powerhouse fusing music, content creation, and captivating on-screen presence</P>
+            <button class="vote-btn" onclick="castVote('voteMessage4')">Vote</button>
+            <div class="vote-message" id="voteMessage4">Vote cast successfully!</div>
+        </div>
+    </div>
+    <div class="card">
+        <img src="./images (30).jpeg" alt="Placeholder Image">
+        <div class="content">
+            <h2>ERICK OMONDI</h2>
+            <P>Inspiring artist pushing boundaries across music, content creation, and the realm of acting.</P>
+            <button class="vote-btn" onclick="castVote('voteMessage5')">Vote</button>
+            <div class="vote-message" id="voteMessage5">Vote cast successfully!</div>
+        </div>
+    </div>
+    <div class="card">
+        <img src="./images (38).jpeg" alt="Placeholder Image">
+        <div class="content">
+            <h2>NJUGUSH</h2>
+            <P>Creative genius seamlessly navigating music, content creation, and acting domains</P>
+            <button class="vote-btn" onclick="castVote('voteMessage6')">Vote</button>
+            <div class="vote-message" id="voteMessage6">Vote cast successfully!</div>
+        </div>
+    </div>
+    
+    <div class="card">
+        <img src="./images (40).jpeg" alt="Placeholder Image">
+        <div class="content">
+            <h2>CRAZY KENNAR</h2>
+            <P>Influential figure driving trends in music, content creation, and the art of acting.</P>
+            <button class="vote-btn" onclick="castVote('voteMessage8')">Vote</button>
+            <div class="vote-message" id="voteMessage8">Vote cast successfully!</div>
+        </div>
+    </div>
+    <div class="card">
+        <img src="./images (36).jpeg" alt="Placeholder Image">
+        <div class="content">
+            <h2>AZZIAD NASENYA</h2>
+            <P>Inspirational icon captivating hearts with music, content creation, and captivating performances</P>
+            <button class="vote-btn" onclick="castVote('voteMessage9')">Vote</button>
+            <div class="vote-message" id="voteMessage9">Vote cast successfully!</div>
+        </div>
+    </div>
+    <div class="card">
+        <img src="./images (35).jpeg" alt="Placeholder Image">
+        <div class="content">
+            <h2>WAKADINALI</h2>
+            <P>Magnetic personality captivating audiences with music, compelling content, and outstanding acting</P>
+            <button class="vote-btn" onclick="castVote('voteMessage10')">Vote</button>
+            <div class="vote-message" id="voteMessage10">Vote cast successfully!</div>
+        </div>
+    </div>
+    <div class="card">
+        <img src="./images (34).jpeg" alt="Placeholder Image">
+        <div class="content">
+            <h2>NADIA MUKAMI</h2>
+            <P>Creative visionary pushing boundaries in music, content creation, and acting spheres</P>
+            <button class="vote-btn" onclick="castVote('voteMessage11')">Vote</button>
+            <div class="vote-message" id="voteMessage11">Vote cast successfully!</div>
+        </div>
+    </div>
+    <div class="card">
+        <img src="./images (33).jpeg" alt="Placeholder Image">
+        <div class="content">
+            <h2>KATE ACTRESS</h2>
+            <P>Unstoppable force of talent reshaping music, content creation, and the world of acting</P>
+            <button class="vote-btn" onclick="castVote('voteMessage12')">Vote</button>
+            <div class="vote-message" id="voteMessage12">Vote cast successfully!</div>
+        </div>
+    </div>
+    <div class="card">
+        <img src="./images (32).jpeg" alt="Placeholder Image">
+        <div class="content">
+            <h2> VERA SIDIKA</h2>
+            <P>Dynamic entertainer captivating audiences through music, content creation, and acting brilliance</P>
+            <button class="vote-btn" onclick="castVote('voteMessage13')">Vote</button>
+            <div class="vote-message" id="voteMessage13">Vote cast successfully!</div>
+        </div>
+    </div>
+
+    <!-- Repeat this card structure 13 more times -->
+</div>
+
+<script>
+    function castVote(messageId) {
+        var voteMessage = document.getElementById(messageId);
+        voteMessage.style.display = 'block';
+        setTimeout(function(){
+            voteMessage.style.display = 'none';
+        }, 10000); // Hide the message after 2 seconds
+        // Here you can implement logic to send the vote data to a server or perform any other action
+    }
+</script>
+
+</body>
+</html>
